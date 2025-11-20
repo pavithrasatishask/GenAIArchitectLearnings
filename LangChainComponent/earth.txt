@@ -1,0 +1,28 @@
+In geodesy, the figure of the Earth is the size and shape used to model planet Earth. The kind of figure depends on application, including the precision needed for the model. A spherical Earth is a well-known historical approximation that is satisfactory for geography, astronomy and many other purposes. Several models with greater accuracy (including ellipsoid) have been developed so that coordinate systems can serve the precise needs of navigation, surveying, cadastre, land use, and various other concerns.
+
+Motivation
+Earth's topographic surface is apparent with its variety of land forms and water areas. This topographic surface is generally the concern of topographers, hydrographers, and geophysicists. While it is the surface on which Earth measurements are made, mathematically modeling it while taking the irregularities into account would be extremely complicated.
+
+The Pythagorean concept of a spherical Earth offers a simple surface that is easy to deal with mathematically. Many astronomical and navigational computations use a sphere to model the Earth as a close approximation. However, a more accurate figure is needed for measuring distances and areas on the scale beyond the purely local. Better approximations can be made by modeling the entire surface as an oblate spheroid, using spherical harmonics to approximate the geoid, or modeling a region with a best-fit reference ellipsoid.
+
+For surveys of small areas, a planar (flat) model of Earth's surface suffices because the local topography overwhelms the curvature. Plane-table surveys are made for relatively small areas without considering the size and shape of the entire Earth. A survey of a city, for example, might be conducted this way.
+
+
+Topographic view of Earth relative to Earth's center (instead of to mean sea level, as in common topographic maps)
+By the late 1600s, serious effort was devoted to modeling the Earth as an ellipsoid, beginning with French astronomer Jean Picard's measurement of a degree of arc along the Paris meridian. Improved maps and better measurement of distances and areas of national territories motivated these early attempts. Surveying instrumentation and techniques improved over the ensuing centuries. Models for the figure of the Earth improved in step.
+
+In the mid- to late 20th century, research across the geosciences contributed to drastic improvements in the accuracy of the figure of the Earth. The primary utility of this improved accuracy was to provide geographical and gravitational data for the inertial guidance systems of ballistic missiles. This funding also drove the expansion of geoscientific disciplines, fostering the creation and growth of various geoscience departments at many universities.[1] These developments benefited many civilian pursuits as well, such as weather and communication satellite control and GPS location-finding, which would be impossible without highly accurate models for the figure of the Earth.
+
+Models
+The models for the figure of the Earth vary in the way they are used, in their complexity, and in the accuracy with which they represent the size and shape of the Earth.
+
+Sphere
+Main article: Spherical Earth
+Further information: Earth radius and Earth's circumference
+
+A view across a 20-km-wide bay in the coast of Spain. The curvature of the Earth is evident in the horizon across the image, and the bases of the buildings on the far shore are below that horizon and hidden by the sea.
+The simplest model for the shape of the entire Earth is a sphere. The Earth's radius is the distance from Earth's center to its surface, about 6,371 km (3,959 mi). While "radius" normally is a characteristic of perfect spheres, the Earth deviates from spherical by only a third of a percent, sufficiently close to treat it as a sphere in many contexts and justifying the term "the radius of the Earth".
+
+The concept of a spherical Earth dates back to around the 6th century BC,[2] but remained a matter of philosophical speculation until the 3rd century BC. The first scientific estimation of the radius of the Earth was given by Eratosthenes about 240 BC, with estimates of the accuracy of Eratosthenes's measurement ranging from −1% to 15%.
+
+The Earth is only approximately spherical, so no single value serves as its natural radius. Distances from points on the surface to the center range from 6,353 km (3,948 mi) to 6,384 km (3,967 mi). Several different ways of modeling the Earth as a sphere each yield a mean radius of 6,371 km (3,959 mi). Regardless of the model, any radius falls between the polar minimum of about 6,357 km (3,950 mi) and the equatorial maximum of about 6,378 km (3,963 mi). The difference 21 km (13 mi) correspond to the polar radius being approximately 0.3% shorter than the equatorial radius.

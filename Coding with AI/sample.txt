@@ -1,0 +1,3 @@
+Hello! This is my first file in Python.
+I am learning file handling in VS Code.
+This is an appended line.

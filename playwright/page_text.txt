@@ -1,0 +1,204 @@
+Welcome To Colab_
+File
+Edit
+View
+Insert
+Runtime
+Tools
+Help
+settings
+link
+Share
+Sign in
+Commands
+Code
+Text
+Copy to Drive
+expand_less
+format_list_bulleted
+find_in_page
+code
+vpn_key
+folder
+Table of contents
+tab
+close
+Welcome to Colab!
+more_vert
+Access popular AI models via Google-Colab-AI Without an API Key
+more_vert
+Explore the Gemini API
+more_vert
+Getting started
+more_vert
+Data science
+more_vert
+Machine learning
+more_vert
+More Resources
+more_vert
+Featured examples
+more_vert
+add
+Section
+keyboard_arrow_down
+Welcome to Colab!
+keyboard_arrow_down
+Access popular AI models via Google-Colab-AI Without an API Key
+
+All users have access to most popular LLMs via the google-colab-ai Python library, and paid users have access to a wider selection of models. For more details, refer to the getting started with google colab ai.
+
+from google.colab import ai
+response = ai.generate_text("What is the capital of France?")
+print(response)
+keyboard_arrow_down
+Explore the Gemini API
+
+The Gemini API gives you access to Gemini models created by Google DeepMind. Gemini models are built from the ground up to be multimodal, so you can reason seamlessly across text, images, code, and audio.
+
+How to get started?
+
+Go to Google AI Studio and log in with your Google account.
+Create an API key.
+Use a quickstart for Python, or call the REST API using curl.
+
+Discover Gemini's advanced capabilities
+
+Play with Gemini multimodal outputs, mixing text and images in an iterative way.
+Discover the multimodal Live API (demo here).
+Learn how to analyze images and detect items in your pictures using Gemini (bonus, there's a 3D version as well!).
+Unlock the power of Gemini thinking model, capable of solving complex task with its inner thoughts.
+
+Explore complex use cases
+
+Use Gemini grounding capabilities to create a report on a company based on what the model can find on internet.
+Extract invoices and form data from PDF in a structured way.
+Create illustrations based on a whole book using Gemini large context window and Imagen.
+
+To learn more, check out the Gemini cookbook or visit the Gemini API documentation.
+
+Colab now has AI features powered by Gemini. The video below provides information on how to use these features, whether you're new to Python, or a seasoned veteran.
+
+What is Colab?
+
+Colab, or "Colaboratory", allows you to write and execute Python in your browser, with
+
+Zero configuration required
+Access to GPUs free of charge
+Easy sharing
+
+Whether you're a student, a data scientist or an AI researcher, Colab can make your work easier. Watch Introduction to Colab or Colab Features You May Have Missed to learn more, or just get started below!
+
+keyboard_arrow_down
+Getting started
+
+The document you are reading is not a static web page, but an interactive environment called a Colab notebook that lets you write and execute code.
+
+For example, here is a code cell with a short Python script that computes a value, stores it in a variable, and prints the result:
+
+seconds_in_a_day = 24 * 60 * 60
+seconds_in_a_day
+
+86400
+
+To execute the code in the above cell, select it with a click and then either press the play button to the left of the code, or use the keyboard shortcut "Command/Ctrl+Enter". To edit the code, just click the cell and start editing.
+
+Variables that you define in one cell can later be used in other cells:
+
+seconds_in_a_week = 7 * seconds_in_a_day
+seconds_in_a_week
+
+604800
+
+Colab notebooks allow you to combine executable code and rich text in a single document, along with images, HTML, LaTeX and more. When you create your own Colab notebooks, they are stored in your Google Drive account. You can easily share your Colab notebooks with co-workers or friends, allowing them to comment on your notebooks or even edit them. To learn more, see Overview of Colab. To create a new Colab notebook you can use the File menu above, or use the following link: create a new Colab notebook.
+
+Colab notebooks are Jupyter notebooks that are hosted by Colab. To learn more about the Jupyter project, see jupyter.org.
+
+keyboard_arrow_down
+Data science
+
+With Colab you can harness the full power of popular Python libraries to analyze and visualize data. The code cell below uses numpy to generate some random data, and uses matplotlib to visualize it. To edit the code, just click the cell and start editing.
+
+You can import your own data into Colab notebooks from your Google Drive account, including from spreadsheets, as well as from Github and many other sources. To learn more about importing data, and how Colab can be used for data science, see the links below under Working with Data.
+
+import numpy as np
+import IPython.display as display
+from matplotlib import pyplot as plt
+import io
+import base64
+
+ys = 200 + np.random.randn(100)
+x = [x for x in range(len(ys))]
+
+fig = plt.figure(figsize=(4, 3), facecolor='w')
+plt.plot(x, ys, '-')
+plt.fill_between(x, ys, 195, where=(ys > 195), facecolor='g', alpha=0.6)
+plt.title("Sample Visualization", fontsize=10)
+
+data = io.BytesIO()
+plt.savefig(data)
+image = F"data:image/png;base64,{base64.b64encode(data.getvalue()).decode()}"
+alt = "Sample Visualization"
+display.display(display.Markdown(F"""![{alt}]({image})"""))
+plt.close(fig)
+
+
+Colab notebooks execute code on Google's cloud servers, meaning you can leverage the power of Google hardware, including GPUs and TPUs, regardless of the power of your machine. All you need is a browser.
+
+For example, if you find yourself waiting for pandas code to finish running and want to go faster, you can switch to a GPU Runtime and use libraries like RAPIDS cuDF that provide zero-code-change acceleration.
+
+To learn more about accelerating pandas on Colab, see the 10 minute guide or US stock market data analysis demo.
+
+keyboard_arrow_down
+Machine learning
+
+With Colab you can import an image dataset, train an image classifier on it, and evaluate the model, all in just a few lines of code.
+
+Colab is used extensively in the machine learning community with applications including:
+
+Getting started with TensorFlow
+Developing and training neural networks
+Experimenting with TPUs
+Disseminating AI research
+Creating tutorials
+
+To see sample Colab notebooks that demonstrate machine learning applications, see the machine learning examples below.
+
+keyboard_arrow_down
+More Resources
+Working with Notebooks in Colab
+Overview of Colab
+Guide to Markdown
+Importing libraries and installing dependencies
+Saving and loading notebooks in GitHub
+Interactive forms
+Interactive widgets
+
+Working with Data
+Loading data: Drive, Sheets, and Google Cloud Storage
+Charts: visualizing data
+Getting started with BigQuery
+Machine Learning
+
+These are a few of the notebooks related to Machine Learning, including Google's online Machine Learning course. See the full course website for more.
+
+Intro to Pandas DataFrame
+Intro to RAPIDS cuDF to accelerate pandas
+Getting Started with cuML's accelerator mode
+Linear regression with tf.keras using synthetic data
+
+Using Accelerated Hardware
+TensorFlow with GPUs
+TPUs in Colab
+
+Featured examples
+Retraining an Image Classifier: Build a Keras model on top of a pre-trained image classifier to distinguish flowers.
+Text Classification: Classify IMDB movie reviews as either positive or negative.
+Style Transfer: Use deep learning to transfer style between images.
+Multilingual Universal Sentence Encoder Q&A: Use a machine learning model to answer questions from the SQuAD dataset.
+Video Interpolation: Predict what happened in a video between the first and the last frame.
+Colab paid products - Cancel contracts here
+data_object
+Variables
+terminal
+Terminal

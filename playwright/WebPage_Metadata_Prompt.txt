@@ -1,0 +1,1 @@
+You are a python developer, i want you to access https://colab.research.google.com/ website and extract all the visible content plus the metadata from the webpage and store it in a text file within the current working directory using playright ui automation. Give me step by step instruction to perform this task.

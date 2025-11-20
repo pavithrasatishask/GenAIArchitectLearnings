@@ -1,0 +1,30 @@
+RAG Architecture
+Last Updated : 08 Sep, 2025
+Retrieval-Augmented Generation (RAG) is an architecture that enhances the capabilities of Large Language Models (LLMs) by integrating them with external knowledge sources. This integration allows LLMs to access up-to-date, domain-specific information which helps in improving the accuracy and relevance of generated responses. RAG is effective in addressing challenges such as hallucinations and outdated knowledge.
+
+The Retrieval-Augmented Generation (RAG) architecture is a two-part process involving a retriever component and a generator component.
+
+1. Retrieval Component
+The retrieval component identifies relevant data to assist in generating accurate responses. Dense Passage Retrieval (DPR) is a common model that is used to perform retrieval. Lets see how DPR works:
+
+Query Encoding: When we submit a query such as a question or prompt, an encoder converts it into a dense vector. This vector represents the query's semantic meaning in a high-dimensional space.
+Passage Encoding: Each document in the knowledge base is also encoded into vectors. The system performs this encoding process offline and stores it to enable fast retrieval when the query is entered.
+Retrieval: Upon receiving the query the system compares the query vector with the vectors of all the documents in the knowledge base. It then retrieves the most relevant passages.
+2. Generative Component
+When the retrieval model identifies the relevant match it is then passed to the generative component. The generative component is based on Transformer architecture like BART or GPT. The generated response will be a combination of the retrieved information along with a newly generated output from the model.
+
+The generative component uses two main strategies i.e Fusion-in-decoder (FiD) and Fusion-in-Encoder (FiE). The final output is based on the user's input. In fusion management both FiD and FiE combine the retrieved information with the user's input to generate a response.
+
+FiD (Fusion-in-Decoder): The retrieval and generation processes are kept separate. The generative model only merges the retrieved information during the decoding phase. This allows the model to focus on the most relevant parts of each document when generating the final response, offering greater flexibility in the integration of retrieved data.
+FiE (Fusion-in-Encoder): FiE combines the query and the retrieved passages at the beginning of the process. Both are processed simultaneously by the encoder. While this method can be more efficient, it offers less flexibility in integrating the retrieved information compared to FiD.
+Workflow of a Retrieval-Augmented Generation (RAG) system
+The RAG architecture’s workflow can be broken down into the following steps:
+
+RAG-architecture
+Retrieval-Augmented Generation
+Query Processing: The input query which could be a natural language question or prompt is first pre-processed. It is then passed to an embedding model that transforms the query into a high-dimensional vector representation.
+Embedding Model: The query is passed through an embedding model which transforms it into a vector that captures the deeper meaning of the query.
+Vector Database Retrieval: The query is in vector form which is used to search through a vector database. The system uses these vectors to find the most relevant documents that match the query.
+Retrieved Contexts: The system retrieves the documents that are closest to the query. These documents are then forwarded to the generative model to help it craft a response.
+LLM Response Generation: The LLM combines the original query with the additional retrieved context using its internal mechanisms to generate a response. It uses its trained knowledge alongside the fresh data to create a contextually accurate and coherent answer.
+Response: A response that blends the model's inherent knowledge with the up-to-date information retrieved during the process is then presented. This makes the response more accurate and detailed.

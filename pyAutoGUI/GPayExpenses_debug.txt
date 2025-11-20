@@ -1,0 +1,96 @@
+Transaction statement
+6380570598,
+pavithra.satishask@gmail.com
+Note: This statement reflects payments made by you on the Google Pay app. Self transfer payments are not included in the total money paid and
+received.AnypaymentstransactionsandactivitydeletedfromyourGoogleAccountwillnotshowupinthisstatement.
+Page1of25
+Transaction statement period
+01May2025-31October 2025
+Sent
+₹6,43,800.37
+Received
+₹1,02,180
+Date&time Transactiondetails Amount
+01May,2025
+05:04AM
+ReceivedfromSigaNarayanan
+UPITransactionID:512189174657
+PaidtoHDFCBank4456
+₹18,000
+01May,2025
+07:49AM
+PaidtoSwiggy
+UPITransactionID:512169616496
+PaidbyHDFCBank4456
+₹155
+01May,2025
+12:07PM
+PaidtoVYSHNAVAK
+UPITransactionID:104070745200
+PaidbyHDFCBank4456
+₹60
+01May,2025
+07:15PM
+PaidtoMAHADEVASWAMY
+UPITransactionID:104096200495
+PaidbyHDFCBank4456
+₹150
+01May,2025
+07:51PM
+PaidtoTSFGIFTJAGANNATHACOUNTER5
+UPITransactionID:104099754971
+PaidbyHDFCBank4456
+₹300
+02May,2025
+12:00PM
+PaidtoSAMVRUDHIFAMILYSTO
+UPITransactionID:104127368074
+PaidbyHDFCBank4456
+₹96
+02May,2025
+03:43PM
+PaidtoPinkPetrolPark
+UPITransactionID:104139289456
+PaidbyHDFCBank4456
+₹2,000
+02May,2025
+04:39PM
+PaidtoMyGate
+UPITransactionID:284243251451
+PaidbyHDFCBank4456
+₹4,718.08Transaction statement
+6380570598,
+pavithra.satishask@gmail.com
+Note: This statement reflects payments made by you on the Google Pay app. Self transfer payments are not included in the total money paid and
+received.AnypaymentstransactionsandactivitydeletedfromyourGoogleAccountwillnotshowupinthisstatement.
+Page2of25
+Date&time Transactiondetails Amount
+02May,2025
+04:41PM
+PaidtoMyGate
+UPITransactionID:104142164269
+PaidbyHDFCBank4456
+₹3,300
+02May,2025
+04:42PM
+PaidtoMyGate
+UPITransactionID:104142209316
+PaidbyHDFCBank4456
+₹4,800
+02May,2025
+04:45PM
+PaidtoKomalKhattar
+UPITransactionID:104142341236
+PaidbyHDFCBank4456
+₹41,567
+02May,2025
+04:48PM
+PaidtoACTCORP
+UPITransactionID:100475746651
+PaidbyHDFCBank4456
+₹1,296.82
+02May,2025
+05:24PM
+PaidtoCHURMURCHAAT
+UPITransactionID:104144537885
+PaidbyHDFCBank445
