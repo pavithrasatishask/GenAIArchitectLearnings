@@ -41,6 +41,7 @@ pythonenv/
 # IDE
 .vscode/
 .idea/
+.vs/
 *.swp
 *.swo
 *~
@@ -71,3 +72,19 @@ Thumbs.db
 *.tmp
 *.bak
 *.log
+
+# Vector databases and indices
+faiss_index*/
+chroma_index/
+*.faiss
+*.pkl
+*.sqlite3
+
+# Virtual environment scripts
+Scripts/
+pyautoenv/
+flaskenv/
+playwrightenv/
+langchainlearningenv/
+pythonchallengeenv/
+streamlitenv/
