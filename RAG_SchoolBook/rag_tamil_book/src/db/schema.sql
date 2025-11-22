@@ -8,9 +8,11 @@ CREATE TABLE IF NOT EXISTS embeddings (
   page INT,
   source TEXT,
   metadata JSONB,
-  embedding vector(1536)
+  embedding vector(3072)
 );
 
--- ivfflat index for approximate nearest neighbor search
--- Tune lists depending on dataset size (100 is an initial suggestion)
-CREATE INDEX IF NOT EXISTS idx_embeddings_embedding ON embeddings USING ivfflat (embedding vector_l2_ops) WITH (lists = 100);
+-- Example HNSW index for fast ANN (preferred for Neon)
+CREATE INDEX IF NOT EXISTS idx_embeddings_embedding
+ON embeddings
+USING hnsw (embedding vector_l2_ops)
+WITH (m = 16, ef_construction = 200);
